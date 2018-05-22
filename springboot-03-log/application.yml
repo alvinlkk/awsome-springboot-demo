@@ -1,0 +1,11 @@
+logging:
+  level:
+    com:
+      alvinlkk: trace
+  #path: /spring/log
+  file: springboot.log
+  pattern:
+    ## 在控制台输出的日志格式
+    console:
+    ## 在文件中输出的日志格式
+    file:

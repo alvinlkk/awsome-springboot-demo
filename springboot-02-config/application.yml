@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+person:
+  last-name: alvin${random.uuid}
+  age: ${random.int}
+  boss: false
+  email: 332059317@qq.com
+  ##为什么要这个格式
+  birth: 1995/04/09
+  map: {k1: v1, k2: v2}
+  list:
+    - nahum
+    - dendi
+  dog:
+    name: ${person.last-name}
+    type: good

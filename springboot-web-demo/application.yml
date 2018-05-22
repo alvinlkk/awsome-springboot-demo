@@ -1,0 +1,10 @@
+server:
+  port: 8082
+mybatis:
+  type-aliases-package: com.alvinlkk.web.pojo
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.100.1.85:3306/alvin_demo?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root

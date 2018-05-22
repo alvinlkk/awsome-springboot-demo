@@ -1,0 +1,14 @@
+person:
+  last-name: alvin
+  age: 25
+  boss: false
+  email: 332059317@qq.com
+  ##为什么要这个格式
+  birth: 1995/04/09
+  map: {k1: v1, k2: v2}
+  list:
+    - nahum
+    - dendi
+  dog:
+    name: lucy
+    type: good
