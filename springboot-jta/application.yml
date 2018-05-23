@@ -1,0 +1,23 @@
+ds1.jdbc:
+   uniqueResourceName: ds1
+   xaDataSourceClassName: com.mysql.cj.jdbc.MysqlXADataSource
+   xaProperties:
+     url: jdbc:mysql://10.100.1.85:3306/alvin_demo?useUnicode=true&characterEncoding=utf-8
+     user: root
+     password: root
+   exclusiveConnectionMode: true
+   minPoolSize: 3
+   maxPoolSize: 10
+   testQuery: SELECT 1 from dual #由于采用HikiriCP，用于检测数据库连接是否存活。
+
+ds2.jdbc:
+   uniqueResourceName: ds2
+   xaDataSourceClassName: com.mysql.cj.jdbc.MysqlXADataSource
+   xaProperties:
+     url: jdbc:mysql://10.100.1.85:3306/alvin1_demo?useUnicode=true&characterEncoding=utf-8
+     user: root
+     password: root
+   exclusiveConnectionMode: true
+   minPoolSize: 3
+   maxPoolSize: 10
+   testQuery: SELECT 1 from dual #由于采用HikiriCP，用于检测数据库连接是否存活。
