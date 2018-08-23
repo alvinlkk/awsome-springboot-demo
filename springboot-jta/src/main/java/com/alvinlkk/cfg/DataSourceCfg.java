@@ -46,7 +46,4 @@ public class DataSourceCfg {
     public JdbcTemplate ds2JdbcTemplate(@Qualifier("jtaDataSource2") DataSource jtaDataSource2) {
         return new JdbcTemplate(jtaDataSource2);
     }
-
-
-
 }

@@ -17,6 +17,7 @@
       <module>springboot-security</module>
       <module>springboot-tx</module>
       <module>springboot-jta</module>
+    <module>springboot-autowired</module>
   </modules>
   <packaging>pom</packaging>
 
