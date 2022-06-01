@@ -1,4 +1,4 @@
-package com.alvin.springboot.initializer;
+package com.alvin.springboot.lifecycle.initializer;
 
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
