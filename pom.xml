@@ -19,6 +19,7 @@
         <module>springboot-jta</module>
         <module>springboot-autowired</module>
         <module>springboot-bean-lifecycle</module>
+        <module>springboot-validation</module>
     </modules>
     <packaging>pom</packaging>
 
