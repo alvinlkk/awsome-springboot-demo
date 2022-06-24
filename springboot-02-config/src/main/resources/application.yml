@@ -17,5 +17,5 @@ person:
     type: good
 
 bsfit.user:
-  user-name: ${person.last-name}
+  userName: ${person.last-name}
   age: 55

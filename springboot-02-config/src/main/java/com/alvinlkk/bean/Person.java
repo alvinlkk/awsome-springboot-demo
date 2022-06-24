@@ -1,6 +1,5 @@
 package com.alvinlkk.bean;
 
-import org.hibernate.validator.constraints.Email;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
@@ -15,7 +14,7 @@ import java.util.*;
  * @create 2018-04-05 18:34
  **/
 @Component
-//@PropertySource(value = {"classpath:person.properties"})
+@PropertySource(value = {"classpath:person.properties"})
 @ConfigurationProperties(prefix = "person")
 @Validated
 public class Person {
@@ -28,7 +27,6 @@ public class Person {
 
     private Date birth;
 
-    @Email
     private String email;
 
     private Map<String, Object> map;
