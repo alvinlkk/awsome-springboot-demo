@@ -12,6 +12,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 import com.alvinlkk.bean.User;
+import com.alvinlkk.bean.ValueTestBean;
 
 /**
  * Hello world!
@@ -25,5 +26,8 @@ public class ConfigApplication {
 
         User userBean = context.getBean(User.class);
         System.out.println(userBean);
+
+        ValueTestBean valueTestBean = context.getBean(ValueTestBean.class);
+        System.out.println(valueTestBean);
     }
 }
