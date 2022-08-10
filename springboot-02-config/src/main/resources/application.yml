@@ -18,6 +18,10 @@ person:
 
 bsfit.user:
   user-name: ${person.last-name}
-  age: 55
+  age: 100
   userId: E000001
   sex: boy
+  friends:
+    - alvin
+    - jack
+    - lucy

@@ -18,4 +18,4 @@ person:
 
 bsfit.user:
   user-name: ${person.last-name}
-  age: 55
+  age: 5000
