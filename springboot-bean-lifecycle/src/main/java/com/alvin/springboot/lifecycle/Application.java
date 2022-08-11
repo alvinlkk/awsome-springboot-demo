@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import com.alvin.springboot.lifecycle.bean.PrototypeBean;
 import com.alvin.springboot.lifecycle.initializer.TestApplicationContextInitializer;
 import com.alvin.springboot.lifecycle.model.User;
 
@@ -21,5 +22,8 @@ public class Application {
 
         User user = context.getBean(User.class);
         log.info("************************username: [{}]", user.getUsername());
+
+        PrototypeBean prototypeBean = context.getBean(PrototypeBean.class);
+        log.info("************************prototypeBean: [{}]", prototypeBean);
     }
 }
