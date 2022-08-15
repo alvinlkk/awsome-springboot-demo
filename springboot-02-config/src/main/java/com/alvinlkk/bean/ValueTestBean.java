@@ -4,6 +4,7 @@
 package com.alvinlkk.bean;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,11 +27,14 @@ public class ValueTestBean {
     @Value("hello")
     private String plainStr;
 
-    @Value("${bsfit.user.user-name:alvin}")
+    @Value("${bsfit.user.userName:}")
     private String userName;
 
     @Value("${bsfit.user.age}")
     private Integer age;
+
+    @Value("${bsfit.user.friends:}")
+    private List<String> friends;
 
     private String sex;
 
