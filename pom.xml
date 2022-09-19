@@ -20,6 +20,7 @@
         <module>springboot-autowired</module>
         <module>springboot-bean-lifecycle</module>
         <module>springboot-validation</module>
+        <module>springboot-aop</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -47,6 +48,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit-dep</artifactId>
+            <version>4.9</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
