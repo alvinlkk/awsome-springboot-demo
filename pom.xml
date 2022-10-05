@@ -9,7 +9,6 @@
         <module>springboot-01-helloworld</module>
         <module>springboot-scheduled</module>
         <module>springboot-02-config</module>
-        <module>springboot-03-log</module>
         <module>springboot-quartz</module>
         <module>springboot-application-listener</module>
         <module>springboot-web-demo</module>
@@ -22,6 +21,8 @@
         <module>springboot-validation</module>
         <module>springboot-aop</module>
         <module>springboot-metrics</module>
+        <module>springboot-log-defaultk</module>
+        <module>springboot-log-logback</module>
     </modules>
     <packaging>pom</packaging>
 
