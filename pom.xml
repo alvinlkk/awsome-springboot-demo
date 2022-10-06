@@ -23,6 +23,7 @@
         <module>springboot-metrics</module>
         <module>springboot-log-defaultk</module>
         <module>springboot-log-logback</module>
+        <module>springboot-log-log4j2</module>
     </modules>
     <packaging>pom</packaging>
 
