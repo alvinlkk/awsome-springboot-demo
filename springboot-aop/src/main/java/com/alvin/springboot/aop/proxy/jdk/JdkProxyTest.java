@@ -22,7 +22,7 @@ public class JdkProxyTest {
         UserService userService = new UserLogProxy(new UserServiceImpl()).getProxy();
 
         // call methods
-        userService.findUserList();
+        userService.dealUsers();
         userService.addUser();
     }
 }

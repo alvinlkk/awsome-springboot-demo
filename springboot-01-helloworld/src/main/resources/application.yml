@@ -1,0 +1,8 @@
+user.name: alvin
+
+management:
+    server:
+      port: 8081
+    web:
+      exposure:
+        include: "*"

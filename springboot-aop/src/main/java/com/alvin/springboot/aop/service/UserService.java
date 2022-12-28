@@ -20,7 +20,7 @@ public interface UserService {
      *
      * @return user list
      */
-    List<User> findUserList();
+    List<User> dealUsers();
 
     /**
      * add user

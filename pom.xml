@@ -13,6 +13,7 @@
         <module>springboot-application-listener</module>
         <module>springboot-web-demo</module>
         <module>springboot-resttemplate</module>
+        <module>springboot-metrics</module>
         <module>springboot-security</module>
         <module>springboot-tx</module>
         <module>springboot-jta</module>
@@ -20,9 +21,7 @@
         <module>springboot-bean-lifecycle</module>
         <module>springboot-validation</module>
         <module>springboot-aop</module>
-        <module>springboot-metrics</module>
-        <module>springboot-log-defaultk</module>
-        <module>springboot-log-logback</module>
+        <module>springboot-swagger3</module>
         <module>springboot-log-log4j2</module>
     </modules>
     <packaging>pom</packaging>
@@ -44,10 +43,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.20</version>
@@ -55,13 +50,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit-dep</artifactId>
-            <version>4.9</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

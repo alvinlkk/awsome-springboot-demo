@@ -3,6 +3,8 @@
  */
 package com.alvin.log;
 
+import java.util.Arrays;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -27,6 +29,12 @@ public class Log4j2App {
         log.info("Info 日志...");
         log.warn("Warn 日志...");
         log.error("Error 日志...");
+        try {
+            int a = 1/0;
+        } catch (Exception e) {
+            log.error("error", e);
+        }
+
     }
 }
 

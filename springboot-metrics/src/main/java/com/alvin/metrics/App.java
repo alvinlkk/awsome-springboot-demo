@@ -1,18 +1,15 @@
-/**
- * Copyright © 2010 浙江邦盛科技有限公司 版权所有
- */
 package com.alvin.metrics;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * 类的描述
+ * <p>描 述：</p>
  *
- * @author alvin
- * @date 2022/9/19
- * @since 1.0
- **/
+ * @author: cxw (cxw@bsfit.com.cn)
+ * @date: 2022/9/20  9:09
+ * @version: 1.0.0
+ */
 @SpringBootApplication
 public class App {
 
