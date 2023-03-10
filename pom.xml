@@ -23,6 +23,7 @@
         <module>springboot-aop</module>
         <module>springboot-swagger3</module>
         <module>springboot-log-log4j2</module>
+        <module>springboot-drools</module>
     </modules>
     <packaging>pom</packaging>
 
