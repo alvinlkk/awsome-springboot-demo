@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class DroolsConfig {
-
+    // 制定规则文件的路径
     private static final String RULES_CUSTOMER_RULES_DRL = "rules/customer-discount.drl";
     private static final KieServices kieServices = KieServices.Factory.get();
 

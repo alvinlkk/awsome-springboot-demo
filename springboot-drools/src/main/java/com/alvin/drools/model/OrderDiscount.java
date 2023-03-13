@@ -14,5 +14,8 @@ import lombok.Setter;
 @Setter
 public class OrderDiscount {
 
+    /**
+     * 折扣
+     */
     private Integer discount = 0;
 }

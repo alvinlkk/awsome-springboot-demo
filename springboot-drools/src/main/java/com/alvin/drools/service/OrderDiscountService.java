@@ -23,11 +23,15 @@ public class OrderDiscountService {
 
     public OrderDiscount getDiscount(OrderRequest orderRequest) {
         OrderDiscount orderDiscount = new OrderDiscount();
+        // 开启会话
         KieSession kieSession = kieContainer.newKieSession();
         // 设置折扣对象
         kieSession.setGlobal("orderDiscount", orderDiscount);
+        // 设置订单对象
         kieSession.insert(orderRequest);
+        // 触发规则
         kieSession.fireAllRules();
+        // 中止会话
         kieSession.dispose();
         return orderDiscount;
     }
