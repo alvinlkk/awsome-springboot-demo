@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>io.micrometer</groupId>
-            <artifactId>micrometer-registry-prometheus</artifactId>
+            <artifactId>micrometer-core</artifactId>
             <version>1.9.3</version>
         </dependency>
     </dependencies>

@@ -14,11 +14,15 @@ import com.alvinlkk.scope.SingletonBean1;
  * Hello world!
  *
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.alvinlkk")
 public class App {
 
     public static void main( String[] args ) {
         ConfigurableApplicationContext context = SpringApplication.run(App.class, args);
+
+        Person personBean = context.getBean(Person.class);
+        System.out.println(personBean);
+
 //
 //        PrototypeBean prototypeBean1 = context.getBean(PrototypeBean.class);
 //        System.out.println(prototypeBean1);
@@ -34,9 +38,9 @@ public class App {
 //        System.out.println(singletonBean1 == singletonBean1);
 //        context.close();
 
-        SingletonBean1 singletonBean1 = context.getBean(SingletonBean1.class);
-        for (int i = 0; i < 5; i++) {
-            singletonBean1.callProtypeBeanPrint();
-        }
+//        SingletonBean1 singletonBean1 = context.getBean(SingletonBean1.class);
+//        for (int i = 0; i < 5; i++) {
+//            singletonBean1.callProtypeBeanPrint();
+//        }
     }
 }

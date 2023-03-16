@@ -3,8 +3,6 @@
  */
 package com.alvin.springboot.aop.proxy.cglib;
 
-import com.alvin.springboot.aop.proxy.jdk.UserLogProxy;
-import com.alvin.springboot.aop.service.UserService;
 import com.alvin.springboot.aop.service.UserServiceImpl;
 
 /**
@@ -20,7 +18,7 @@ public class CglibProxyTest {
         UserServiceImpl userService = (UserServiceImpl) new CglibUserLogProxy().getUserLogProxy(new UserServiceImpl());
 
         // call methods
-        userService.findUserList();
-        userService.addUser();
+        userService.dealUsers();
+        //userService.addUser();
     }
 }

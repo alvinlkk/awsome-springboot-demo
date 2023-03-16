@@ -1,0 +1,12 @@
+logging:
+  level:
+    com:
+      alvinlkk: trace
+  #path: /spring/log
+  pattern:
+    ## 在控制台输出的日志格式
+    console: '%d{yyyy/MM/dd HH:mm:ss.SSS} %clr(%-5level) [%magenta(%thread)] %cyan(%logger{15}) : %msg%n'
+    ## 在文件中输出的日志格式
+    file: '%d{yyyy/MM/dd HH:mm:ss.SSS} %clr(%-5level) [%magenta(%thread)] %cyan(%logger{15}) : %msg%n'
+  file:
+    name: springboot.log
