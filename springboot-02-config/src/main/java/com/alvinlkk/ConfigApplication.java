@@ -22,28 +22,29 @@ import com.alvinlkk.config.TestConfig;
  * idea properties 乱码问题
  */
 @SpringBootApplication
+@EnableConfigurationProperties(User.class)
 public class ConfigApplication {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(ConfigApplication.class, args);
 
-        User userBean = context.getBean(User.class);
-        System.out.println(userBean);
+//        User userBean = context.getBean(User.class);
+//        System.out.println(userBean);
 
-        ValueTestBean valueTestBean = context.getBean(ValueTestBean.class);
-        System.out.println(valueTestBean);
-
-        Cat cat = context.getBean("cat", Cat.class);
+//        ValueTestBean valueTestBean = context.getBean(ValueTestBean.class);
+//        System.out.println(valueTestBean);
+//
+//        Cat cat = context.getBean("cat", Cat.class);
 //        Person dadPerson = context.getBean("dad", Person.class);
 //        Person momPerson = context.getBean("mom", Person.class);
 //        System.out.println(cat);
 //        System.out.println(dadPerson.getCat());
 //        System.out.println(momPerson.getCat());
 
-        TestConfig testConfig = context.getBean(TestConfig.class);
-
-        Cat newCat = testConfig.cat();
-        System.out.println(newCat);
-        System.out.println(testConfig);
+//        TestConfig testConfig = context.getBean(TestConfig.class);
+//
+//        Cat newCat = testConfig.cat();
+//        System.out.println(newCat);
+//        System.out.println(testConfig);
     }
 }

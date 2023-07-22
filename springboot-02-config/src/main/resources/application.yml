@@ -16,8 +16,8 @@ person:
     name: ${person.last-name}
     type: good
 
-bsfit.user:
-  user-name: ${person.last-name}
+my.user:
+  user-name: xuyang
   age: 100
   userId: E000001
   sex: boy
