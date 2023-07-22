@@ -22,20 +22,20 @@ public class HelloWorldApplication {
     @Autowired
     private ThreadPoolExecutor threadPoolExecutor;
 
-    @PostConstruct
-    public void init() throws InterruptedException {
-        // 提交1000个线程任务
-        for (int i = 0; i < 1000; i++) {
-            // 定义求和任务
-            SumRunnable sumRunnable = new SumRunnable();
-            // 包装求和任务
-            RunnableWrapper runnableWrapper = new RunnableWrapper(sumRunnable, "求和线程任务" + i);
-            // 提交任务
-            threadPoolExecutor.submit(runnableWrapper);
-
-            Thread.sleep(100);
-        }
-    }
+//    @PostConstruct
+//    public void init() throws InterruptedException {
+//        // 提交1000个线程任务
+//        for (int i = 0; i < 1; i++) {
+//            // 定义求和任务
+//            SumRunnable sumRunnable = new SumRunnable();
+//            // 包装求和任务
+//            RunnableWrapper runnableWrapper = new RunnableWrapper(sumRunnable, "求和线程任务" + i);
+//            // 提交任务
+//            threadPoolExecutor.submit(runnableWrapper);
+//
+//            Thread.sleep(100);
+//        }
+//    }
 
     @GetMapping("/unicode")
     public String showUnicode() {
