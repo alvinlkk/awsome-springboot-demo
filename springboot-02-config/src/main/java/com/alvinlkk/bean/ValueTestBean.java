@@ -27,13 +27,13 @@ public class ValueTestBean {
     @Value("hello")
     private String plainStr;
 
-    @Value("${bsfit.user.userName:}")
+    @Value("${my.user.userName:}")
     private String userName;
 
-    @Value("${bsfit.user.age}")
+    @Value("${my.user.age}")
     private Integer age;
 
-    @Value("${bsfit.user.friends:}")
+    @Value("${my.user.friends:}")
     private List<String> friends;
 
     private String sex;
@@ -55,13 +55,13 @@ public class ValueTestBean {
     @Value("classpath:person.properties")
     private Resource resourceFile; // 注入文件资源
 
-    @Value("${bsfit.user.sex}")
+    @Value("${my.user.sex}")
     public void setSex(String sex) {
         this.sex = sex;
     }
 
     @Autowired
-    public void setUserId(@Value("${bsfit.user.userId}") String userId) {
+    public void setUserId(@Value("${my.user.userId}") String userId) {
         this.userId = userId;
     }
 }

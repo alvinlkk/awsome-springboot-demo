@@ -19,7 +19,7 @@ import springfox.documentation.annotations.ApiIgnore;
 /**
  * <p>描 述：</p>
  *
- * @author: cxw (cxw@bsfit.com.cn)
+ * @author: cxw (cxw@my.com.cn)
  * @date: 2022/8/17  10:33
  * @version: 1.0.0
  */

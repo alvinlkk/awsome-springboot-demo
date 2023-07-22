@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * <p>描 述：</p>
  *
- * @author: cxw (cxw@bsfit.com.cn)
+ * @author: cxw (cxw@my.com.cn)
  * @date: 2022/9/20  9:09
  * @version: 1.0.0
  */

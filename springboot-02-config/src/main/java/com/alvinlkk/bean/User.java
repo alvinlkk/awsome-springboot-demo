@@ -12,7 +12,7 @@ import org.springframework.validation.annotation.Validated;
 import lombok.Data;
 import lombok.ToString;
 
-@ConfigurationProperties(prefix = "bsfit.user")
+@ConfigurationProperties(prefix = "my.user")
 @Component
 @ToString
 @Validated
