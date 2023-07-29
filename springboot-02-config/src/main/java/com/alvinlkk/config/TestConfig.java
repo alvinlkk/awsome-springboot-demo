@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 用户配置bean
  *
- * @author: cxw (cxw@bsfit.com.cn)
+ * @author: cxw (cxw@my.com.cn)
  * @date: 2022/8/18  13:20
  * @version: 1.0.0
  */

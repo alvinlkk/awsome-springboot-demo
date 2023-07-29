@@ -26,6 +26,7 @@
         <module>springboot-drools</module>
         <module>springboot-async</module>
         <module>springboot-transactional</module>
+        <module>springboot-cache</module>
     </modules>
     <packaging>pom</packaging>
 
