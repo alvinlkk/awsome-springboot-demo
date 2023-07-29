@@ -25,6 +25,7 @@
         <module>springboot-log-log4j2</module>
         <module>springboot-drools</module>
         <module>springboot-async</module>
+        <module>springboot-transactional</module>
     </modules>
     <packaging>pom</packaging>
 

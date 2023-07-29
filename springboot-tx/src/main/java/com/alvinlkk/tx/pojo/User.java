@@ -1,9 +1,14 @@
 package com.alvinlkk.tx.pojo;
 
+import lombok.Data;
+import lombok.experimental.Accessors;
+
 /**
  * @author alvinkk
  * @create 2018-05-10 15:33
  **/
+@Data
+@Accessors(chain = true)
 public class User {
 
     private String userName;

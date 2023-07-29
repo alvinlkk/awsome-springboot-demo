@@ -1,7 +1,9 @@
-package com.alvinlkk.tx.service;
+package com.alvinlkk.tx.service.impl;
 
 import com.alvinlkk.tx.mapper.UserMapper;
 import com.alvinlkk.tx.pojo.User;
+import com.alvinlkk.tx.service.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.TransactionDefinition;
@@ -20,10 +22,22 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
+    @Override
+    public List<User> listAll() {
+        return userMapper.getAll();
+    }
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public void insertUser(User user) {
+        userMapper.insert(user);
+        throw new RuntimeException("ss");
+    }
 
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public void insertUser2(User user) {
+        userMapper.insert(user);
     }
 
     @Override

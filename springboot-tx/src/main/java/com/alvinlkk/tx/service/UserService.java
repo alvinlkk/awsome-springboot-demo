@@ -1,5 +1,7 @@
 package com.alvinlkk.tx.service;
 
+import java.util.List;
+
 import com.alvinlkk.tx.mapper.UserMapper;
 import com.alvinlkk.tx.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +14,11 @@ import org.springframework.stereotype.Component;
  **/
 public interface UserService {
 
+    List<User> listAll();
+
     void insertUser(User user);
+
+    void insertUser2(User user);
 
     void updateUser(User user) throws InterruptedException;
 
